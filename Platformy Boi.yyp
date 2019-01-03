@@ -197,6 +197,14 @@
                 "resourcePath": "rooms\\rm_one\\rm_one.yy",
                 "resourceType": "GMRoom"
             }
+        },
+        {
+            "Key": "f5379dd9-32b1-49e8-a8d2-41328be378d1",
+            "Value": {
+                "id": "6f47eff7-d938-4c78-8f99-7cf237f2836f",
+                "resourcePath": "objects\\obj_solid\\obj_solid.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
