@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "bda4875b-9107-424f-83e2-0e6f44e2b315",
+            "Value": {
+                "id": "0cf932bc-0200-4bc5-8692-fe366ba2d24c",
+                "resourcePath": "sprites\\spr_shooty_boi\\spr_shooty_boi.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "872166c5-85a5-45e1-99d2-7bd5da61a59e",

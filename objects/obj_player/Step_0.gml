@@ -7,7 +7,7 @@ if hinput!=0
 }
 else
 {
-	hspeed_=lerp(hspeed_,0,0.3)
+	hspeed_=lerp(hspeed_,0,friction_)
 }
 if !place_meeting(x,y+1,obj_solid)
 {
@@ -17,7 +17,7 @@ else
 {
 	if keyboard_check_pressed(ord("W"))
 	{
-		vspeed_=-15
+		vspeed_=jump_height
 	}
 }
 if place_meeting(x+hspeed_,y,obj_solid)
