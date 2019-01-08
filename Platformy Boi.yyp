@@ -146,7 +146,7 @@
             "Key": "9d5fefab-2f3d-4950-b6a4-a6838dc77675",
             "Value": {
                 "id": "43e1c913-462d-4112-abcb-829cb37c7509",
-                "resourcePath": "sprites\\spr_player\\spr_player.yy",
+                "resourcePath": "sprites\\spr_chief\\spr_chief.yy",
                 "resourceType": "GMSprite"
             }
         },
