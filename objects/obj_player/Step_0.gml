@@ -38,3 +38,15 @@ if place_meeting(x,y+vspeed_, obj_solid)
 	vspeed_=0
 }
 y+=vspeed_
+//Shoot
+var dir=point_direction(x,y,mouse_x,mouse_y)
+var flipped=(mouse_x>x)*2-1
+var gun_x=x-4*flipped
+var x_offset=lengthdir_x(10,dir)
+var y_offset=lengthdir_y(10,dir)
+if mouse_check_button(mb_left)&&(cooldown<1)
+{
+	instance_create_layer(gun_x+x_offset,y+y_offset-4,"Instances",obj_bullet_boi)
+	cooldown=5
+}
+cooldown=cooldown-1
