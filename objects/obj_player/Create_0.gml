@@ -12,3 +12,8 @@ keyboard_set_map(vk_left, ord("A"))
 keyboard_set_map(vk_right, ord("D"))
 keyboard_set_map(vk_up, ord("W"))
 keyboard_set_map(vk_down, ord("S"))
+//etc
+bullet_cooldown=room_speed/20
+alarm[0]=bullet_cooldown
+x_scale=image_xscale
+y_scale=image_yscale
