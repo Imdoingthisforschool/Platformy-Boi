@@ -1,11 +1,11 @@
 //Variables
 hspeed_=0
-max_hspeed=5
+max_hspeed=7
 vspeed_=0
-gravity_=0.7
+gravity_=1
 acceleration=1
 friction_=0.3
-jump_height=-12
+jump_height=-16
 cooldown=0
 //Keyboard Binding
 keyboard_set_map(vk_left, ord("A"))
