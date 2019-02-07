@@ -8,3 +8,5 @@ MOVEMENT=0
 ATTACK=1
 HIT=2
 state=MOVEMENT
+bullet_cooldown=room_speed/6
+alarm[0]=bullet_cooldown

@@ -7,6 +7,8 @@ acceleration=1
 friction_=0.3
 jump_height=-12
 cooldown=0
+ammo=32
+health_=10
 //Keyboard Binding
 keyboard_set_map(vk_left, ord("A"))
 keyboard_set_map(vk_right, ord("D"))

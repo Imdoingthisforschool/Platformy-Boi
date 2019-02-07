@@ -30,3 +30,8 @@ if place_meeting(x,y+1,obj_solid) && !place_meeting(x,yprevious+1,obj_solid)
 }
 x_scale=lerp(x_scale,image_xscale,0.1)
 y_scale=lerp(y_scale,image_yscale,0.1)
+//Health Check
+if health_<=0
+{
+	instance_destroy()
+}
