@@ -1,8 +1,8 @@
 {
-    "id": "d5e67753-8b16-47ea-ac7e-d2fd15f87e28",
+    "id": "fda436f8-14c0-4db3-b466-9ceb091135df",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "scr_puush",
+    "name": "scr_macros",
     "IsCompatibility": false,
     "IsDnD": false
 }

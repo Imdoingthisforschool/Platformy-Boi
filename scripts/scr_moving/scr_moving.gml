@@ -1,18 +1,19 @@
-if place_meeting(x+hspeed_,y,obj_solid)
+var speed_=argument0
+if place_meeting(x+speed_[h],y,obj_solid)
 {
-		while !place_meeting(x+sign(hspeed_),y,obj_solid)
+		while !place_meeting(x+sign(speed_[h]),y,obj_solid)
 	{
-		x+=sign(hspeed_)
+		x+=sign(speed_[h])
 	}
-	hspeed_=0
+	speed_[@ h]=0
 }
-x+=hspeed_
-if place_meeting(x,y+vspeed_, obj_solid)
+x+=speed_[h]
+if place_meeting(x,y+speed_[v], obj_solid)
 {
-	while !place_meeting(x,y+sign(vspeed_),obj_solid)
+	while !place_meeting(x,y+sign(speed_[v]),obj_solid)
 	{
-		y+=sign(vspeed_)
+		y+=sign(speed_[v])
 	}
-	vspeed_=0
+	speed_[@ v]=0
 }
-y+=vspeed_
+y+=speed_[v]

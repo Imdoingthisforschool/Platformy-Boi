@@ -7,7 +7,8 @@ if alarm[0]<=0
 	var gun_x=x-4*flipped
 	var x_offset=lengthdir_x(10,dir)
 	var y_offset=lengthdir_y(10,dir)
-	var bullet=instance_create_layer(gun_x+x_offset,y+y_offset-18,"Instances",obj_bullet_boi)
+	var bullet=instance_create_layer(gun_x+x_offset,y+y_offset-15,"Instances",obj_bullet_boi)
+	bullet.image_angle=dir
 	bullet.direction=dir
 	alarm[0]=bullet_cooldown
 }

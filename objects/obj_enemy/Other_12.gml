@@ -1,7 +1,7 @@
-scr_puush()
-hspeed_push=lerp(hspeed_push,0,0.1)		
-vspeed_push=lerp(vspeed_push,0,0.1)
-if point_distance(0,0,hspeed_push,vspeed_push)<1
+scr_moving(speed_push)
+speed_push[h]=lerp(speed_push[h],0,0.1)		
+speed_push[v]=lerp(speed_push[v],0,0.1)
+if point_distance(0,0,speed_push[h],speed_push[v])
 {
 	state=MOVEMENT
 }

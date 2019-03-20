@@ -2,36 +2,46 @@
 var hinput=keyboard_check(ord("D"))-keyboard_check(ord("A"))
 if hinput!=0
 {
-	hspeed_+=hinput*acceleration
-	hspeed_=clamp(hspeed_,-max_hspeed,max_hspeed)
+	speed_[h]+=hinput*acceleration
+	speed_[h]=clamp(speed_[h],-max_speed,max_speed)
+	var flipped=(mouse_x>x)*2-1
+	image_speed=flipped*hinput*0.6
 }
 else
 {
-	hspeed_=lerp(hspeed_,0,friction_)
+	speed_[h]=lerp(speed_[h],0,friction_)
+	image_speed=0
+	image_index=0
 }
 if !place_meeting(x,y+1,obj_solid)
 {
-	vspeed_+=gravity_
+	speed_[v]+=gravity_
+	image_speed=0
+	image_index=6
 }
 else
 {
 	if keyboard_check_pressed(ord("W"))
 	{
-		vspeed_=jump_height
+		speed_[v]=jump_height
 		x_scale=image_xscale*0.8
 		y_scale=image_yscale*2
 	}
 }
-scr_moving()
+scr_moving(speed_)
 if place_meeting(x,y+1,obj_solid) && !place_meeting(x,yprevious+1,obj_solid)
 {
 	x_scale=image_xscale*1.4
 	y_scale=image_yscale*0.8
+	image_speed=0
+	image_index=6
 }
-x_scale=lerp(x_scale,image_xscale,0.1)
-y_scale=lerp(y_scale,image_yscale,0.1)
+x_scale=lerp(x_scale,image_xscale,0.15)
+y_scale=lerp(y_scale,image_yscale,0.15)
 //Health Check
 if health_<=0
 {
 	instance_destroy()
 }
+
+scr_warp()
