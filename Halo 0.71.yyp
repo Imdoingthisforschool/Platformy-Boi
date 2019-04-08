@@ -39,6 +39,22 @@
             }
         },
         {
+            "Key": "0ddc647b-3365-4ddb-b4ef-56fcca8276b0",
+            "Value": {
+                "id": "3dc1a425-6788-4bae-8765-c7919f0e7791",
+                "resourcePath": "sprites\\spr_enemybullethit\\spr_enemybullethit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "100ba110-dc01-4360-8e88-a38d673f689a",
+            "Value": {
+                "id": "21c83e1d-2679-41da-af12-75aed259d7f3",
+                "resourcePath": "objects\\obj_game\\obj_game.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1090303a-41e1-41f1-85bb-2e1e332e8feb",
             "Value": {
                 "id": "557b3cbb-b5a8-4149-bfde-52fc2a6cc65f",
@@ -124,6 +140,14 @@
                 "id": "c6a6d555-fa77-4ac0-b5f8-3c076d58892a",
                 "resourcePath": "sprites\\spr_bullet_boi\\spr_bullet_boi.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5dbbf547-e0ae-4901-b4ae-e937ba708165",
+            "Value": {
+                "id": "ddb23328-cdcc-40f9-b020-3016d76b130b",
+                "resourcePath": "objects\\obj_hit\\obj_hit.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -215,6 +239,14 @@
             }
         },
         {
+            "Key": "91e805a0-bf77-4977-a8db-8800c152d5fd",
+            "Value": {
+                "id": "9007c5b6-e8fc-4f77-a93e-bc50512f5c5e",
+                "resourcePath": "scripts\\scr_enemy_shoot\\scr_enemy_shoot.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "93ae9ac3-b733-447a-9eb5-ca148a6711b4",
             "Value": {
                 "id": "926e80d8-4d76-431e-9872-1e87f508445e",
@@ -268,14 +300,6 @@
                 "id": "459620bd-eb0d-4fff-a3ca-6f750c86ff67",
                 "resourcePath": "objects\\obj_spawn\\obj_spawn.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ad332a0f-fa9c-431e-ad3f-5cc0f9c75611",
-            "Value": {
-                "id": "8ec2b8ac-7e29-4473-9157-a383ea1f49f9",
-                "resourcePath": "scripts\\scr_warp\\scr_warp.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -340,6 +364,14 @@
                 "id": "872166c5-85a5-45e1-99d2-7bd5da61a59e",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d95c8bc7-90dc-4e0e-afa6-ffda12db3ccd",
+            "Value": {
+                "id": "031268ea-432d-4c4e-b1c3-4b7dcd02aa63",
+                "resourcePath": "objects\\obj_hit2\\obj_hit2.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -410,7 +442,7 @@
     "script_order": [
         "7e038ad2-8c7e-4e80-bb68-147f0aa3f58d",
         "fda436f8-14c0-4db3-b466-9ceb091135df",
-        "ad332a0f-fa9c-431e-ad3f-5cc0f9c75611"
+        "91e805a0-bf77-4977-a8db-8800c152d5fd"
     ],
     "tutorial": ""
 }

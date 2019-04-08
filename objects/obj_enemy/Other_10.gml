@@ -1,21 +1,21 @@
 if instance_exists(obj_player)
 {
 	var dir=point_direction(x,y,obj_player.x,obj_player.y)
-	speed_[h]=lengthdir_x(max_speed, dir)
-	speed_[v]=lengthdir_y(max_speed, dir)
-	scr_moving(speed_)
-	if place_meeting(x,y,obj_enemy)
-	scr_moving(speed_push)
-	{			
-		speed_push[h]=lerp(speed_push[h],0,0.1)		
-		speed_push[v]=lerp(speed_push[v],0,0.1)
+	speed_[h]+=lengthdir_x(acceleration, dir)
+	speed_[v]+=lengthdir_y(acceleration, dir)
+	if point_distance(0,0,speed_[h],speed_[v])>max_speed
+	{
+		var move_dir=point_direction(0,0,speed_[h],speed_[v])
+		speed_[h]=lengthdir_x(max_speed, move_dir)
+		speed_[v]=lengthdir_y(max_speed, move_dir)
 	}
 	if health_<=0
 	{
 		instance_destroy()
 	}
-	if distance_to_object(obj_player)<48
+	if distance_to_object(obj_player)<120
 	{
-		state=ATTACK
+		scr_enemy_shoot()
 	}
 }
+scr_moving(speed_,0.5)

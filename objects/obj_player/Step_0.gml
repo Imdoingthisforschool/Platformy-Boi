@@ -28,7 +28,7 @@ else
 		y_scale=image_yscale*2
 	}
 }
-scr_moving(speed_)
+scr_moving(speed_,0)
 if place_meeting(x,y+1,obj_solid) && !place_meeting(x,yprevious+1,obj_solid)
 {
 	x_scale=image_xscale*1.4
@@ -43,5 +43,16 @@ if health_<=0
 {
 	instance_destroy()
 }
-
-scr_warp()
+//Reload
+if ammo<=0&&reload=false
+{
+	ammo=0
+	reload=true
+	alarm[1]=120
+}
+if keyboard_check_pressed(ord("R"))&&reload=false&&ammo!=32
+{
+	reload=true
+	ammo=0
+	alarm[2]=90
+}

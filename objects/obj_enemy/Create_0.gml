@@ -1,10 +1,8 @@
 speed_=[0,0]
-speed_push=[0,0]
-max_speed=1
-health_=5
+acceleration=0.05
+max_speed=3
+health_=100
 MOVEMENT=0
-ATTACK=1
-HIT=2
 state=MOVEMENT
-bullet_cooldown=room_speed/6
+bullet_cooldown=room_speed
 alarm[0]=bullet_cooldown

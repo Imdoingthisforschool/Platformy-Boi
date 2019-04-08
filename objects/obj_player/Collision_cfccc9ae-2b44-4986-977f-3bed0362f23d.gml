@@ -1,2 +1,2 @@
-health_-=1
+health_-=10
 instance_destroy(other)

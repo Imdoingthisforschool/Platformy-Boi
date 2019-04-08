@@ -7,8 +7,9 @@ friction_=0.3
 jump_height=-12
 cooldown=0
 ammo=32
-max_health=10
+max_health=100
 health_=max_health
+reload=false
 //Keyboard Binding
 keyboard_set_map(vk_left, ord("A"))
 keyboard_set_map(vk_right, ord("D"))

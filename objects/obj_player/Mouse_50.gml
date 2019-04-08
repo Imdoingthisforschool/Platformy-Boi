@@ -1,5 +1,5 @@
 //Shoot
-if alarm[0]<=0
+if alarm[0]<=0&&reload=false
 {
 	ammo=ammo-room_speed/60
 	var dir=point_direction(x,y-sprite_height/2,mouse_x,mouse_y)
