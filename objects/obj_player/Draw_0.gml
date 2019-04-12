@@ -7,4 +7,6 @@ if reload=true
 {
 	draw_set_font(fnt_font)
 	draw_text(obj_player.x-40,obj_player.y-50,"RELOADING")
+	var dir=point_direction(x,y-sprite_height/2,mouse_x,mouse_y)
+	var flipped=(mouse_x>x)*2-1
 }
