@@ -1,5 +1,5 @@
 draw_self()
-if !instance_exists(obj_player)
+if !instance_exists(obj_player)&&cutscene=false
 {
 	exit
 }
