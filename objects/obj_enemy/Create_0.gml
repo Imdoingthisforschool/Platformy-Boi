@@ -6,3 +6,6 @@ MOVEMENT=0
 state=MOVEMENT
 bullet_cooldown=room_speed
 alarm[0]=bullet_cooldown
+
+x_scale=image_xscale
+y_scale=image_yscale

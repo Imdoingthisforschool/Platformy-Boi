@@ -1,5 +1,5 @@
 draw_self()
-if !instance_exists(obj_player)&&cutscene=false
+if !instance_exists(obj_player)&&obj_mouse.cutscene=false
 {
 	exit
 }

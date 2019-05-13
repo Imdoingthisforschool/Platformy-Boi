@@ -17,5 +17,6 @@ if instance_exists(obj_player)
 	{
 		scr_enemy_shoot()
 	}
+	scr_moving(speed_,0.25)
 }
-scr_moving(speed_,0.25)
+

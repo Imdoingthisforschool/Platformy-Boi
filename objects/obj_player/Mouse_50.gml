@@ -15,6 +15,10 @@ if alarm[0]<=0&&reload=false
 	{
 		var dir=point_direction(x,y-sprite_height/2,random_range(mouse_x+1.5,mouse_x-1.5),random_range(mouse_y+1.5,mouse_y-1.5))
 	}
+		if distance_to_object(obj_mouse)<=10
+	{
+		var dir=point_direction(x,y-sprite_height/2,random_range(mouse_x+0.1,mouse_x-0.1),random_range(mouse_y+1.5,mouse_y-1.5))
+	}
 	var flipped=(mouse_x>x)*2-1
 	var gun_x=x-4*flipped
 	var x_offset=lengthdir_x(10,dir)
