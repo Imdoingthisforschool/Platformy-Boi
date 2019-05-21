@@ -1,8 +1,8 @@
 {
-    "id": "c3af0764-2296-4471-ae61-6bbf6d4264dd",
+    "id": "956ec5e7-989f-411a-b611-947c16b3840b",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_meem",
+    "name": "snd_walk",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

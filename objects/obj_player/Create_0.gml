@@ -10,6 +10,7 @@ ammo=32
 max_health=100
 health_=max_health
 reload=false
+walk=false
 //Keyboard Binding
 keyboard_set_map(vk_left, ord("A"))
 keyboard_set_map(vk_right, ord("D"))

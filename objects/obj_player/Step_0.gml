@@ -6,6 +6,7 @@ if hinput!=0
 	speed_[h]=clamp(speed_[h],-max_speed,max_speed)
 	var flipped=(mouse_x>x)*2-1
 	image_speed=flipped*hinput*0.6
+	/*walk=true*/
 }
 else
 {
@@ -13,6 +14,10 @@ else
 	image_speed=0
 	image_index=0
 }
+/*if walk=true
+{
+	alarm[3]=60
+}*/
 if !place_meeting(x,y+1,obj_solid)
 {
 	speed_[v]+=gravity_
