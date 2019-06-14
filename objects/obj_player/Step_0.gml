@@ -59,5 +59,5 @@ if keyboard_check_pressed(ord("R"))&&reload=false&&ammo!=32
 {
 	reload=true
 	ammo=0
-	alarm[2]=90
+	alarm[1]=90
 }

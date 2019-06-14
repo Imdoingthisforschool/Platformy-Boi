@@ -11,3 +11,6 @@ if pause
 	show_debug_message(string(gui_width))
 	show_debug_message(string(gui_height))
 }
+draw_set_halign(fa_right)
+draw_text(room_width-330, room_height-250,"Score: "+string(score))
+draw_set_halign(fa_left)
